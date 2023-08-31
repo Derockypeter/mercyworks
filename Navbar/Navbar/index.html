@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/material-icons@1.13.8/iconfont/material-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        nav {
+            background-color: #FFFFFF;
+            height: 8.7vh;
+            line-height: 10.7vh;
+            padding: 0 1vw;
+            margin: 0%;
+            font-family: 'Inter', sans-serif;
+        }
+
+        nav .brand-logo {
+            line-height: 9.7vh;
+            font-size: 2.9rem;
+            font-weight: 750;
+            font-family: 'Inter', sans-serif;
+
+        }
+
+        .brand-logo .logo {
+            /* height: 5.6vh; */
+            color: black;
+            margin: 0%;
+            font-size: large;
+            
+        }
+
+        nav .nav-wrapper ul li,
+        nav .nav-wrapper ul li a,
+        nav .nav-wrapper ul li a i {
+            height: 8.7vh;
+            line-height: 8.7vh;
+        }
+
+
+        .dropdown-trigger {
+            font-weight: 700;
+            line-height:8.7vh;
+;
+        }
+
+        nav .nav-wrapper ul.dropdown-content li,
+        nav .nav-wrapper ul.dropdown-content li a {
+            height: 7vh;
+            line-height: 7vh;
+        }
+
+        /* nav ul a:hover {
+            line-height: ;
+        } */
+
+        nav .nav-wrapper ul.dropdown-content li a {
+            padding: 0.5vh 0.5vw;
+
+
+        }
+
+        nav .nav-wrapper i {
+            font-size: 1.3rem;
+
+        }
+
+        nav .nav-wrapper ul li a,
+        nav .nav-wrapper ul.dropdown-content li a {
+            color: #312e39;
+           
+            
+        }
+
+       .notify {
+            background-color: #16648e;
+            color: #FFFFFF;
+            font-size: 0.7rem;
+            padding: 0 0.2vw;
+            border-radius: 30%;
+            position: relative;
+            right: 0.9vw;
+            bottom: 0vh;
+            line-height: 8.7vh;
+        }
+
+        .cartTotal {
+            margin-right: 1vw;
+        }
+
+        /* search */
+        .searchbar {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            width: 100%;
+            top: 0;
+            height: 14.7vh;
+        }
+
+        .searchbar .input-field {
+            background-color: #FFFFFF;
+            width: 50%;
+            margin: 0 auto;
+            height: 14.7vh;
+        }
+
+        .searchbar .input-field input {
+            padding: 0 0 0 5%;
+            width: 95%;
+            margin-bottom: 0;
+            height: inherit;
+        }
+
+        .searchbar .input-field label,
+        .searchbar .input-field i {
+            height: 14.7vh;
+            line-height: 14.7vh;
+        }
+
+        .input-field input[type=search]+.label-icon {
+            left: 0.5rem;
+        }
+
+        p .logo {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">
+                <!-- <img src="./images/logoipsum-295.svg" class="logo" alt="Fashion Designer" decoding="async"> -->
+                <p class="logo">Logo Name</p>
+            </a>
+            <ul class="left hide-on-med-and-down">
+                <!-- <li><a href="#" id="triggerSearchBarDisplay"><i class="material-icons">search</i></a></li> -->
+                <li><a class="dropdown-trigger" href="#!" data-target="navCategory">Home<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="navCategory">Categories<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="navCategory">Blogs<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+
+                <!-- <li><a href="#">Featured Product</a></li> -->
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" id="triggerSearchBarDisplay"><i class="material-icons">search</i></a></li>
+
+                <!-- <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li> -->
+                <!-- <li>
+                    <a href="#">$0.00</a>
+                </li> -->
+
+
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="cartTotal">0</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cartTotal">0</span>
+                        <!-- <span class="notify">0</span> -->
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <ul id="navCategory" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+
+
+        <ul id="navCategory" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+
+
+        <ul id="navCategory" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+
+
+
+
+    </nav>
+
+    <!-- <div class="searchbar" id="searchbar">
+        <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons" id="seacrhBarClose">close</i>
+        </div>
+    </div>  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+
+        const options = {
+            alignment: 'right',
+            constrainWidth: true,
+            coverTrigger: false
+        };
+        const elems = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(elems, options);
+
+
+        // close search bar
+        const searchBarElem = document.getElementById('searchbar');
+        searchBarElem.style.display = "none";
+
+        const searchCLoseElem = document.getElementById('seacrhBarClose');
+        const triggerSearchBarDisplayElem = document.getElementById('triggerSearchBarDisplay');
+        searchCLoseElem.addEventListener('click', function () {
+            toggleSearchBar()
+        });
+        triggerSearchBarDisplayElem.addEventListener('click', function () {
+            toggleSearchBar()
+        });
+
+        let toggleSearchBar = () => {
+            const searchBarElem = document.getElementById('searchbar');
+            if (searchBarElem.style.display === "none") {
+                searchBarElem.style.display = "block";
+            } else {
+                searchBarElem.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

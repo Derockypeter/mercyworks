@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/material-icons@1.13.8/iconfont/material-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        .product_container {
+            display: flex;
+            justify-content: space-between;
+            /* margin-left: 10%;
+            margin-right: 10%; */
+            margin-top: 6%;
+        }
+
+        .product {
+            position: relative;
+            text-align: left;
+        }
+
+        .product_text {
+            position: absolute;
+            text-align: left;
+            bottom: 0%;
+            color: white;
+            font-size: medium;
+            font-weight: 600;
+            height: 12.5vh;
+            width: 22.2vw;
+            background-color: #232020;
+            padding-left: 8%;
+            padding-top: 8%;
+        }
+
+        .product_text:hover {
+            position: absolute;
+            text-align: left;
+            background-color: rgb(4, 19, 40);
+            margin-top: -10%;
+            height: 15vh;
+            transition: 0.7s;
+        }
+
+        /* .product:hover {
+            position: relative;
+            text-align: left;
+        } */
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="product_container">
+    
+                <div class="product">
+                    <img src="image/man.png" alt="man">
+                     <h6 class="product_text">Clothing</h6>
+                </div>
+    
+                 <div class="product">
+                    <img src="image/watch.png" alt="man">
+                     <h6 class="product_text">Accessories</h6>
+                </div>
+    
+                <div class="product">
+                    <img src="image/shoes.png" alt="man">
+                     <h6 class="product_text" >Footwear</h6>
+                </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
